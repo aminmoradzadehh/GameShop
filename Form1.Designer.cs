@@ -29,11 +29,9 @@
         private void InitializeComponent()
         {
             NewGameBtn = new Button();
-            NewCompanyBtn = new Button();
             NewCategoryBtn = new Button();
             NewMasterBtn = new Button();
             GameListBtn = new Button();
-            CompanyListBtn = new Button();
             CatrgoryListBtn = new Button();
             MasterListBtn = new Button();
             SuspendLayout();
@@ -52,27 +50,13 @@
             NewGameBtn.UseVisualStyleBackColor = false;
             NewGameBtn.Click += NewGameBtn_Click;
             // 
-            // NewCompanyBtn
-            // 
-            NewCompanyBtn.BackColor = Color.Gold;
-            NewCompanyBtn.Cursor = Cursors.Hand;
-            NewCompanyBtn.FlatAppearance.BorderSize = 0;
-            NewCompanyBtn.FlatStyle = FlatStyle.Flat;
-            NewCompanyBtn.Location = new Point(70, 140);
-            NewCompanyBtn.Name = "NewCompanyBtn";
-            NewCompanyBtn.Size = new Size(186, 43);
-            NewCompanyBtn.TabIndex = 1;
-            NewCompanyBtn.Text = "New Company";
-            NewCompanyBtn.UseVisualStyleBackColor = false;
-            NewCompanyBtn.Click += NewCompanyBtn_Click;
-            // 
             // NewCategoryBtn
             // 
             NewCategoryBtn.BackColor = Color.Gold;
             NewCategoryBtn.Cursor = Cursors.Hand;
             NewCategoryBtn.FlatAppearance.BorderSize = 0;
             NewCategoryBtn.FlatStyle = FlatStyle.Flat;
-            NewCategoryBtn.Location = new Point(70, 232);
+            NewCategoryBtn.Location = new Point(70, 118);
             NewCategoryBtn.Name = "NewCategoryBtn";
             NewCategoryBtn.Size = new Size(186, 43);
             NewCategoryBtn.TabIndex = 2;
@@ -86,7 +70,7 @@
             NewMasterBtn.Cursor = Cursors.Hand;
             NewMasterBtn.FlatAppearance.BorderSize = 0;
             NewMasterBtn.FlatStyle = FlatStyle.Flat;
-            NewMasterBtn.Location = new Point(70, 320);
+            NewMasterBtn.Location = new Point(70, 195);
             NewMasterBtn.Name = "NewMasterBtn";
             NewMasterBtn.Size = new Size(186, 43);
             NewMasterBtn.TabIndex = 3;
@@ -108,27 +92,13 @@
             GameListBtn.UseVisualStyleBackColor = false;
             GameListBtn.Click += GameListBtn_Click;
             // 
-            // CompanyListBtn
-            // 
-            CompanyListBtn.BackColor = Color.Gold;
-            CompanyListBtn.Cursor = Cursors.Hand;
-            CompanyListBtn.FlatAppearance.BorderSize = 0;
-            CompanyListBtn.FlatStyle = FlatStyle.Flat;
-            CompanyListBtn.Location = new Point(454, 140);
-            CompanyListBtn.Name = "CompanyListBtn";
-            CompanyListBtn.Size = new Size(195, 43);
-            CompanyListBtn.TabIndex = 5;
-            CompanyListBtn.Text = "Company List";
-            CompanyListBtn.UseVisualStyleBackColor = false;
-            CompanyListBtn.Click += CompanyListBtn_Click;
-            // 
             // CatrgoryListBtn
             // 
             CatrgoryListBtn.BackColor = Color.Gold;
             CatrgoryListBtn.Cursor = Cursors.Hand;
             CatrgoryListBtn.FlatAppearance.BorderSize = 0;
             CatrgoryListBtn.FlatStyle = FlatStyle.Flat;
-            CatrgoryListBtn.Location = new Point(454, 232);
+            CatrgoryListBtn.Location = new Point(454, 118);
             CatrgoryListBtn.Name = "CatrgoryListBtn";
             CatrgoryListBtn.Size = new Size(195, 43);
             CatrgoryListBtn.TabIndex = 6;
@@ -142,7 +112,7 @@
             MasterListBtn.Cursor = Cursors.Hand;
             MasterListBtn.FlatAppearance.BorderSize = 0;
             MasterListBtn.FlatStyle = FlatStyle.Flat;
-            MasterListBtn.Location = new Point(454, 320);
+            MasterListBtn.Location = new Point(454, 195);
             MasterListBtn.Name = "MasterListBtn";
             MasterListBtn.Size = new Size(195, 43);
             MasterListBtn.TabIndex = 7;
@@ -155,14 +125,12 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateBlue;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(731, 313);
             Controls.Add(MasterListBtn);
             Controls.Add(CatrgoryListBtn);
-            Controls.Add(CompanyListBtn);
             Controls.Add(GameListBtn);
             Controls.Add(NewMasterBtn);
             Controls.Add(NewCategoryBtn);
-            Controls.Add(NewCompanyBtn);
             Controls.Add(NewGameBtn);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
@@ -173,11 +141,9 @@
         #endregion
 
         private Button NewGameBtn;
-        private Button NewCompanyBtn;
         private Button NewCategoryBtn;
         private Button NewMasterBtn;
         private Button GameListBtn;
-        private Button CompanyListBtn;
         private Button CatrgoryListBtn;
         private Button MasterListBtn;
     }

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GameShop.Forms.Company
+namespace GameShop
 {
-    public partial class CompanyList : Form
+    public partial class CustomerForm : Form
     {
-        public CompanyList()
+        public CustomerForm()
         {
             InitializeComponent();
         }

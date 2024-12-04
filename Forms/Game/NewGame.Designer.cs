@@ -35,7 +35,7 @@
             GameCompanyLabel = new Label();
             GameNameTxtBox = new TextBox();
             GameYearTxtBox = new TextBox();
-            CompanyComboBox = new ComboBox();
+            companyTxtBox = new TextBox();
             SuspendLayout();
             // 
             // SubmitBtn
@@ -105,7 +105,6 @@
             GameNameTxtBox.Name = "GameNameTxtBox";
             GameNameTxtBox.Size = new Size(297, 23);
             GameNameTxtBox.TabIndex = 9;
-            GameNameTxtBox.KeyPress += GameNameTxtBox_KeyPress;
             // 
             // GameYearTxtBox
             // 
@@ -114,18 +113,14 @@
             GameYearTxtBox.Name = "GameYearTxtBox";
             GameYearTxtBox.Size = new Size(297, 23);
             GameYearTxtBox.TabIndex = 10;
-            GameYearTxtBox.KeyPress += GameYearTxtBox_KeyPress;
             // 
-            // CompanyComboBox
+            // companyTxtBox
             // 
-            CompanyComboBox.BackColor = Color.Gold;
-            CompanyComboBox.FormattingEnabled = true;
-            CompanyComboBox.Items.AddRange(new object[] { "Origins", "Activision", "Rockstar", "Valve" });
-            CompanyComboBox.Location = new Point(378, 118);
-            CompanyComboBox.Name = "CompanyComboBox";
-            CompanyComboBox.Size = new Size(297, 23);
-            CompanyComboBox.TabIndex = 11;
-            CompanyComboBox.KeyPress += CompanyComboBox_KeyPress;
+            companyTxtBox.BackColor = Color.Gold;
+            companyTxtBox.Location = new Point(378, 118);
+            companyTxtBox.Name = "companyTxtBox";
+            companyTxtBox.Size = new Size(297, 23);
+            companyTxtBox.TabIndex = 12;
             // 
             // NewGame
             // 
@@ -133,7 +128,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateBlue;
             ClientSize = new Size(712, 271);
-            Controls.Add(CompanyComboBox);
+            Controls.Add(companyTxtBox);
             Controls.Add(GameYearTxtBox);
             Controls.Add(GameNameTxtBox);
             Controls.Add(GameCompanyLabel);
@@ -157,6 +152,6 @@
         private Label GameCompanyLabel;
         private TextBox GameNameTxtBox;
         private TextBox GameYearTxtBox;
-        private ComboBox CompanyComboBox;
+        private TextBox companyTxtBox;
     }
 }

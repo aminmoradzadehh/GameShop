@@ -1,5 +1,4 @@
 using GameShop.Forms.Category;
-using GameShop.Forms.Company;
 using GameShop.Forms.Game;
 using GameShop.Forms.Master;
 
@@ -23,19 +22,6 @@ namespace GameShop
             GameList form = new GameList();
             form.Show();
         }
-
-        private void NewCompanyBtn_Click(object sender, EventArgs e)
-        {
-            NewCompany form = new NewCompany();
-            form.Show();
-        }
-
-        private void CompanyListBtn_Click(object sender, EventArgs e)
-        {
-            CompanyList form = new CompanyList();
-            form.Show();
-        }
-
         private void NewCategoryBtn_Click(object sender, EventArgs e)
         {
             NewCategory form = new NewCategory();
