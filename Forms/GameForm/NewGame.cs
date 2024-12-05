@@ -33,7 +33,6 @@ namespace GameShop.Forms.Game
                 GameYear = gameYearTxtBox.Text,
                 Company = companyTxtBox.Text,
             };
-            AddGame(AddGame);
             games = _gameBuisness.GetAll();
             ReloadDataEvent.Invoke(games);
             MessageBox.Show("Register Successfully");
