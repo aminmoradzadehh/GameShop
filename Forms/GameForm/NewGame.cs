@@ -12,7 +12,7 @@ namespace GameShop.Forms.Game
             InitializeComponent();
             BaseBackend.Entities.Game newGame = new BaseBackend.Entities.Game();
 
-            List<Game> games = new List<Game>();
+            List<BaseBackend.Entities.Game> games = new List<BaseBackend.Entities.Game>();
 
 
         }
@@ -29,12 +29,7 @@ namespace GameShop.Forms.Game
                 return true;
         }
         private readonly NewGameBusiness _gameBusiness;
-
-        //Delegate
         public delegate void ReloadData(List<Game> games);
-
-        //Event?
-        // Declare the event.
         public event ReloadData ReloadDataEvent;
 
         List<Game> games;
