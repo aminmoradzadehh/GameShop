@@ -27,10 +27,16 @@ namespace GameShop.Forms.Game
         {
             if (!IsValidRegistrationForm())
                 return;
-            AddGame addStudent = new AddGame()
+            int gameYear;
+            if (!int.TryParse(gameYearTxtBox.Text, out gameYear))
+            {
+                MessageBox.Show("Please enter a valid year.");
+                return;
+            }
+            AddGame addGame = new AddGame()
             {
                 GameName = gameNameTxtBox.Text,
-                GameYear = gameYearTxtBox.Text,
+                GameYear = gameYear,
                 Company = companyTxtBox.Text,
             };
             games = _gameBuisness.GetAll();
@@ -71,7 +77,8 @@ namespace GameShop.Forms.Game
         }
         public void AddGame(AddGame addGame)
         {
-            BaseBackend.Entities.Game game = new(gameName: addGame.GameName, gameYear: addGame.GameYear, company: addGame.Company);
+            
+          GameData game = new(gameName: addGame.GameName, gameYear: addGame.GameYear, company: addGame.Company);
             _gameBuisness.Add(game);
         }
 
